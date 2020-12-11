@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8"> 
+    <title>April's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="nav-wrapper">
+            <div class="left-side">
+
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="portfolio.html">Portfolio</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="contact.html">Contact</a>
+                </div>
+
+            </div>
+            <div class="right-side">
+                <div class="brand">
+                    <div>April Kang</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="" alt="">
+                            </div>
+                            <div class="subtitle">Music is a very important part of my life.</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/chengdu1.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="" alt="">
+                            </div>
+                            <div class="subtitle">I always travel in my spare time.</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="" alt="">
+                            </div>
+                            <div class="subtitle">I like to keep track of what I learn every day.</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="" alt="">
+                            </div>
+                            <div class="subtitle">Can't live without coffee.</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/chengdu2.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="" alt="">
+                            </div>
+                            <div class="subtitle">Hometown Xi'an.</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="" alt="">
+                            </div>
+                            <div class="subtitle">Badminton is my favorite sport.</div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+
+</body>
+
+<footer>
+    <p>&copy; April Kang University of Michigan</p>
+</footer>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('image-darken');
+        });
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        });
+    });
+
+</script>
+</html>
+
